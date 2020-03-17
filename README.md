@@ -95,7 +95,8 @@ To install the latest version of Deep Security Smart Check into the default Kube
 
 _Experienced `helm` users will note that we are using `deepsecurity-smartcheck` as the `helm` release name in these examples. There is no requirement to use this release name._
 
-**Note:** This installs Deep Security Smart Check with an in-cluster database, which requires a persistent volume. Your cluster must support creating persistent volumes to work with the in-cluster database. See [Use an external database](https://github.com/deep-security/smartcheck-helm/wiki/Use-an-external-database) to learn how to use an external database with Deep Security Smart Check.
+**Note:** This installs Deep Security Smart Check with an in-cluster database, which requires a persistent volume. Your cluster must support creating persistent volumes to work with the in-cluster database. See [Use an external database](https://github.com/deep-security/smartcheck-helm/wiki/Use-an-external-database) to learn how to use an external database with Deep Security Smart Check. 
+   If you are using the in-cluster database with nodes running Amazons Bottlerocket OS in EKS, you must install the EKS EBS CSI plugin driver. [EBS-CSI](https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html)
 
 ### Connecting to Deep Security Smart Check
 
